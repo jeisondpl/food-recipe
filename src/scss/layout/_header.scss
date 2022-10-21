@@ -1,0 +1,10 @@
+.header-container{
+    color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: $breakpoint-md) {
+            flex-direction: column;
+    }
+}
+

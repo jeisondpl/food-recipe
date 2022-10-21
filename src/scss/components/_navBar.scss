@@ -1,0 +1,77 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 60px;
+  height: 69px;
+
+  @media (max-width: $medium) {
+    padding: 0px 30px;
+  }
+
+  .navbar__hamburger {
+    display: none;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+
+    .navbar__img-hambuger{
+      width: 25px;
+      height: 25px;
+    }
+
+    &:hover{
+      background: lighten($primary, 40%);
+    }
+
+    @media (max-width: $medium) {
+      display: block;
+    }
+  }
+
+  .navbar__logo {
+    font-family: $font-monster;
+    font-weight: 100;
+    color: #425966;
+    font-size: 40px;
+    padding: 0;
+    margin: 0px 50px 0px 0px;
+
+    span{
+      color: $primary;
+      font-family: $font-poppins-regular;
+    }
+  }
+
+  .navbar__list-menu{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    list-style: none;
+    flex: 1;
+    li {
+      font-family: $font-poppins-medium;
+      font-weight: 100;
+      margin-right: 3%;
+      font-size: 13px;
+    }
+    .navbar__item{
+      color: #425966;
+      text-decoration: none;
+    }
+
+    .navbar__item-active{
+      text-decoration: none;
+      color: $primary;
+      font-weight: 600;
+    }
+
+    @media (max-width: $medium) {
+      display: none;
+    }
+
+  }
+}

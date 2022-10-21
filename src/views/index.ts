@@ -1,0 +1,8 @@
+export { default as HomeScreen } from './HomeScreen'
+export { default as NotFoundScreen } from './NotFoundScreen'
+export { default as SopasScreen } from './SopasScreen'
+export { default as VegetarianScreen } from './VegetarianScreen'
+export { default as FastFootScreen } from './FastFootScreen'
+export { default as MenukidsScreen } from './MenukidsScreen'
+export { default as PlatesScreen } from './PlatesScreen'
+export { default as CakesScreen } from './CakesScreen'

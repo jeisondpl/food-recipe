@@ -1,0 +1,24 @@
+
+/*abstracts*/
+@import "./abstracts/_variables.scss";
+
+/*base*/
+@import "./base/_reset.scss";
+@import "./base/_base.scss";
+
+/*layout*/
+@import "./layout/_header.scss";
+@import "./layout/_footer.scss";
+
+/*components*/
+@import "./components/_app.scss";
+@import "./components/_buttons.scss";
+@import "./components/_cards.scss";
+@import "./components/_navBar.scss";
+@import "./components/_banner.scss";
+
+
+
+
+
+
