@@ -1,0 +1,26 @@
+footer{
+  height: 167px;
+  background: transparent linear-gradient(180deg, #C2E3F3 0%, #6AA3C1 100%) 0% 0% no-repeat padding-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: $font-monster;
+  color: #425966;
+  font-size: 50px;
+  margin-bottom: 20px;
+
+  img{
+    margin-top: -30px;
+    width: 530px;
+    object-fit: cover;
+    @media (max-width: $small) {
+      width: 228px;
+    }
+  }
+
+  @media (max-width: $small) {
+    height: 70px;
+    font-size: 23px;
+  }
+
+}
