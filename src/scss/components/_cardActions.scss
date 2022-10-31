@@ -1,0 +1,33 @@
+.card_actions {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: -50px 10px 0px 10px;
+  @media (max-width: $breakpoint-sm) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: -50px 10px 0px 10px;
+  }
+  @media only screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-xl) {
+    visibility: hidden;
+  }
+}
+
+  .card_actions__container {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 5px 9px #8395A766;
+    height:100px;
+    width: 110px;
+    .card_actions__title{
+      font-size: 15px;
+      color: #425966;
+      font-weight: bold;
+    }
+}
+

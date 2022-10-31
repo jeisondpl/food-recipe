@@ -1,0 +1,16 @@
+.recipe__title{
+    color: $primary;
+    font-family: $font-monster;
+    font-size: 67px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @media (max-width: $medium) {
+      font-size: 54px;
+      margin-bottom: 10px;
+    }
+    @media (max-width: $small) {
+      font-size: 44px;
+      text-align: center;
+    }
+  }

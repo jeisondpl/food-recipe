@@ -1,0 +1,210 @@
+.container_card_items{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 350px;
+  margin-top: 100px;
+  
+
+  .container_card_items__content{
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 5px 9px #8395A766;
+    height: auto;
+    width: 100%;
+
+    .container_card_items_content__header{
+      display: flex;
+      position: relative;
+      align-items: center;
+      border-radius: 10px 10px 0px 0px;
+      flex-direction: column;
+      height: 100px;
+      justify-content: space-evenly;
+      transition: height .5s;
+    
+      @media (max-width: $medium) {
+        margin-right: 30px;
+        min-width: 180px;
+      }
+    
+      @media (max-width: $small) {
+        min-width: 180px;
+      }
+    
+      .card__img__content{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+      }
+      
+      .card__card--img {
+        position: relative;
+        height: 160px;
+        object-fit: none;
+        margin-top: -50px;
+      }
+    }
+  }
+  
+}
+
+.container_card_items__body{
+  display: flex;
+  position: relative;
+  border-radius: 0px 0px 10px 10px;
+  flex-direction: column;
+  height: 130px;
+  align-items: space-between;
+  transition: height .2s;
+  width: 100%;
+
+
+  @media (max-width: $medium) {
+    margin-right: 30px;
+    min-width: 180px;
+  }
+
+  @media (max-width: $small) {
+    min-width: 180px;
+  }
+  .container_card_items__body1{
+    position: absolute;
+    visibility: inherit;
+    width: 100%;
+    
+        }
+    .container_card_items__body2{
+      position: absolute;
+      visibility: hidden;
+    }
+ 
+  p{
+    color: $primary;
+    font-size: 30px;
+    font-family: $font-poppins-regular;
+    margin: 0px;
+    padding: 0;
+  }
+
+  .card__header_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 20px;
+    color: $primary;
+    font-size: 25px;
+    font-family: $font-poppins-regular;
+    @media (max-width: $small) {
+      font-size: 20px;
+    }
+    span{
+      font-family: $font-monster;
+      margin-top: 5px;
+    }
+  }
+
+  .card__footer__content{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    visibility: visible;
+    padding: 0px 20px 20px 20px;
+
+    .recipe-card-start{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .recipe-score{
+        font-size: 15px;
+        color: #425966;
+        margin-left: 12px;
+        padding: 0;
+      }
+
+
+    }
+    .recipe-card-favorite{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .recipe-card-footer-img{
+        width: 23px;
+        height: 23px;
+      }
+    }
+  }
+
+  .card__detail{
+    display: none;
+  }
+
+
+  @media only screen and (min-width:769px){
+   
+    &:hover {
+      height: 250px;
+     
+      .container_card_items__body1{
+        visibility: hidden;
+        width: 100%;
+      }
+      .container_card_items__body2{
+        visibility: inherit;
+      }
+      .card__header_title{
+        display: none;
+      }
+      
+      .card__footer__content{
+        display: none;
+      }
+    
+      .card__detail{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        transform: scaleY(1);
+      }
+    
+      .spaceCard{
+        margin-top: 0px;
+      }
+    
+      .card__detail--item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    
+    
+        .card__detail {
+          font-family: $font-monster;
+          font-weight: 100;
+          font-size: 20px;
+        }
+    
+        .card__detail--normal {
+          font-family: $font-poppins-regular;
+          color: #425966;
+          font-size: 18px;
+          margin: 0;
+          padding: 0;
+        }
+        
+      }
+    
+    }
+  }
+ 
+
+}

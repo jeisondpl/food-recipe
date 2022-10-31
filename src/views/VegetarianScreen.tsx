@@ -1,5 +1,7 @@
+import { FetchScreen } from '../components'
+
 const VegetarianScreen = () => {
-  return <div>VegetarianScreen</div>
+  return <FetchScreen name={'vegetables'} title={'Vegetales'} />
 }
 
 export default VegetarianScreen

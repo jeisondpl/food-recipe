@@ -1,0 +1,22 @@
+.container{
+  display:flex;
+  flex-direction: column;
+  padding: 20px 100px;
+  position: relative;
+  margin-bottom: 40px;
+  
+  @media (max-width: $medium) {
+    padding: 10px 30px;
+  }
+
+  .recipe__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    @media only screen and (max-width:769px){
+      overflow-x: scroll;
+    }
+
+  }
+
+}

@@ -1,8 +1,7 @@
+import { FetchScreen } from '../components'
 
 const CakesScreen = () => {
-  return (
-    <div>CakesScreen</div>
-  )
+  return <FetchScreen name={'cakes'} title={'Tortas'} />
 }
 
 export default CakesScreen

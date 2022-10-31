@@ -1,6 +1,7 @@
+import { FetchScreen } from '../components'
 
 const PlatesScreen = () => {
-  return <div>PlatesScreen</div>
+  return <FetchScreen name={'main course'} type={'main course'} title={'Platos Principales'} />
 }
 
 export default PlatesScreen
