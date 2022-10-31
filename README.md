@@ -7,10 +7,11 @@ Una importante firma de escuelas de cocina nos encargo el diseño de una platafo
 
 ### Instalación 🔧
 
-Descargar el proyecto en el link https://github.com/jeisondpl/food-recipe entrar en la carpeta cd food-recipe-fronteend, luego debe instalar todas las dependencias para porde correr el proyecto con:
+Descargar el proyecto en el link https://github.com/jeisondpl/food-recipe entrar en la carpeta cd food-recipe-fronteend, luego debe instalar todas las dependencias para poder correr el proyecto con:
 
 ```
 npm install
+npm run start
 ```
 
 ## Construido con 🛠️
