@@ -14,6 +14,7 @@ export interface ICardActions {
   title: string
   image: string
   imageType?: string
+  url: string
 }
 
 

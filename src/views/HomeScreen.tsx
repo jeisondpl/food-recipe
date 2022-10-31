@@ -14,7 +14,7 @@ const HomeScreen = () => {
     <section className='container'>
       <div className='card_actions'>
         {acctionData.map((recipe: ICardActions) => (
-          <CardActions key={recipe.id} image={recipe.image} title={recipe.title} />
+          <CardActions key={recipe.id} image={recipe.image} title={recipe.title} url={recipe.url} />
         ))}
       </div>
       <h1 className='recipe__title'>Nuevas Recetas</h1>

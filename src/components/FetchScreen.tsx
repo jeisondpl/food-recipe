@@ -2,6 +2,7 @@ import { Recipe, Paguinate } from '../components'
 import { useFetch } from '../hooks'
 import type { TModule } from '../types/IModules'
 import type { Result } from '../types/IRecipe'
+import { dataPrueba as data } from '../utils/constantsHome'
 
 interface props {
   title: string
@@ -10,7 +11,7 @@ interface props {
 }
 
 const FetchScreen = ({ name, title, type }: props) => {
-  const { SigPaguinate, PrevPaguinate, page, isLoading, data } = useFetch({ name, type })
+  const { SigPaguinate, PrevPaguinate, page, isLoading } = useFetch({ name, type })
   return (
     <div className='recipe__container'>
       <Paguinate SigPaguinate={SigPaguinate} PrevPaguinate={PrevPaguinate} page={page} endPage={data && data?.number} isLoading={isLoading} />

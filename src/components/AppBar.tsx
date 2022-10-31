@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import menuImg from '../assets/icons/ic_home.svg'
 import { navLinks } from '../routes/routers'
 import type { IRoute } from '../types/IRoute'
@@ -6,9 +6,11 @@ import type { IRoute } from '../types/IRoute'
 const AppBar = () => {
   return (
     <nav className='navbar'>
-      <h1 className='navbar__logo'>
-        Recipe<span>App</span>
-      </h1>
+      <Link to={'/home'}>
+        <h1 className='navbar__logo'>
+          Recipe<span>App</span>
+        </h1>
+      </Link>
 
       <button className='navbar__hamburger'>
         <img src={menuImg} className='navbar__img-hambuger' alt='menu' />

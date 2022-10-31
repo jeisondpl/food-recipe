@@ -7,15 +7,20 @@
 }
 .recipe_card__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+
     @media (max-width: $breakpoint-sm) {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
     }
+    @media (min-width: $breakpoint-lg) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
   }
-
 
 .recipe_card {
     display: flex;
@@ -25,8 +30,8 @@
     background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0px 5px 9px #8395A766;
-    height:500px;
-    width: 400px;
+    height:350px;
+    width: 300px;
     .card_actions__title{
         font-size: 20px;
         color: #425966;
@@ -36,18 +41,9 @@
 }
 
   .recipe_card__img {
-    width: 400px;
-    height: 400px;
+    height: 300px;
+    width: 300px;
     border-radius: 10px 10px 0px 0px;
-    // @media (max-width: $breakpoint-sm) {
-    //     display: grid;
-    //     grid-template-columns: repeat(3, 1fr);
-    //     gap: 10px;
-    //     margin: -50px 10px 0px 10px;
-    // }
-    // @media only screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-xl) {
-    //   visibility: hidden;
-    // }
   }
 
 

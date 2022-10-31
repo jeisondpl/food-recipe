@@ -10,7 +10,7 @@ const useFetch = ({ name, type }: { name: string; type?: string }) => {
   const [page, setPage] = useState(1)
 
   const { data, isLoading, error } = useQuery<IResponse, Error>([name, page], ({ queryKey }) =>
-    FetchServices.get(type ? `/recipes/complexSearch?type=${type}&offset=${queryKey[1]}` : `/recipes/complexSearch?query=${name}&offset=${queryKey[1]}`).then(
+    FetchServices.get(type ? `1111/recipes/complexSearch?type=${type}&offset=${queryKey[1]}` : `1111/recipes/complexSearch?query=${name}&offset=${queryKey[1]}`).then(
       (response) => response.data
     )
   )
